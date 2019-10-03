@@ -12,7 +12,7 @@
 
 ### use
 
-> pxwait.show({ message: '', panelshow: false, spinlevel: '3', canceltimeout: 5000 }); <br>
+> - pxwait.show({ message: '', panelshow: false, spinlevel: '3', canceltimeout: 5000 }); <br>
 > random selection if spinlevel is not used <br>
-> pxwait.change('message change'); - change message while on <br>
-> pxwait.hide(); <br>
+> - pxwait.change('message change'); - change message while on <br>
+> - pxwait.hide(); <br>
