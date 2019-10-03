@@ -1,6 +1,6 @@
 {
   "name": "px-wait",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "shows an aesthetic panel on the screen in asynchronous operations.",
   "main": "px-wait.js",
   "directories": {
