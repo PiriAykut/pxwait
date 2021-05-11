@@ -108,7 +108,9 @@ function showpxwait0(options) {
         $(".pxwait-window").append('<div class="pxwait-window-message">' + options.message + '</div>');
     }
 
-    $(".pxwait-window").append('<div class="pxwait-window-spinblock">' + getSpinnerpxwait(options.spinlevel, options.frcolor) + '</div>');
+    if (options.spinlevel != "none") {
+        $(".pxwait-window").append('<div class="pxwait-window-spinblock">' + getSpinnerpxwait(options.spinlevel, options.frcolor) + '</div>');
+    }
 
     if (options.canceltimeout > 0) {
         $(".pxwait-window").append('<div class="pxwait-window-timeoutnumber">0</div>');
@@ -150,7 +152,7 @@ function showpxwait0(options) {
 function showpxwait1(options) {
     $("body").append('<div class="pleasewait1">' +
         '    <div class="waitwindow1">' +
-        '        <img src="' + core.u.sitePath.replace('/app/', '') + '/images/loading3.gif" alt="uludugun.com"/>' +
+        '        <img src="' + core.u.sitePath.replace('/app/', '') + '/images/loading3.gif" />' +
         '        <span>' + options.message + '</span>' +
         '    </div>' +
         '</div>');
